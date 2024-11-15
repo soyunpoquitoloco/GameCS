@@ -17,38 +17,38 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Projekt Melody")
 
 #Importer l'image de game over
-gomort = pygame.image.load("mort.png")
+gomort = pygame.image.load("assets/mort.png")
 gomort = pygame.transform.scale(gomort,(800,431))
 #Importer le tuto
-before = pygame.image.load("Before.png")
+before = pygame.image.load("assets/Before.png")
 before = pygame.transform.scale(before,(800,431))
-after = pygame.image.load("After.png")
+after = pygame.image.load("assets/After.png")
 after = pygame.transform.scale(after,(800,431))
 #importer et charger le bouton start
-bouton_lancement = pygame.image.load("Start.png")
+bouton_lancement = pygame.image.load("assets/Start.png")
 bouton_lancement = pygame.transform.scale(bouton_lancement,(350,350))
 bouton_lancement_rect = bouton_lancement.get_rect()
 bouton_lancement_rect.x = 320
 bouton_lancement_rect.y = 550
 #importer et charger les boutons de sélection de level
-lvl_Prodigy = pygame.image.load("Prodigy.png")
+lvl_Prodigy = pygame.image.load("assets/Prodigy.png")
 lvl_Prodigy = pygame.transform.scale(lvl_Prodigy,(600,100))
 lvl_Prodigy_rect = lvl_Prodigy.get_rect()
 lvl_Prodigy_rect.x = 0
 lvl_Prodigy_rect.y = 100
-lvl_Daft = pygame.image.load("Daft Punk.png")
+lvl_Daft = pygame.image.load("assets/Daft Punk.png")
 lvl_Daft = pygame.transform.scale(lvl_Daft,(600,100))
 lvl_Daft_rect = lvl_Daft.get_rect()
 lvl_Daft_rect.x = 0
 lvl_Daft_rect.y = 250
 #Importer le back button
-back = pygame.image.load("back.png")
+back = pygame.image.load("assets/back.png")
 back = pygame.transform.scale(back,(400,231))
 back_rect = back.get_rect()
 back_rect.x = 700
 back_rect.y = 600
 #importer et charger la bannière
-banner = pygame.image.load("Banner.png")
+banner = pygame.image.load("assets/Banner.png")
 banner = pygame.transform.scale(banner,(500,800))
 
 # Fonction pour charger le GIF du background
@@ -67,7 +67,7 @@ def load_gif(filename):
             pass  # Fin des images
     return frames
 # Charger le GIF
-gif_frames = load_gif("bg.gif")  # Remplacez par le chemin de votre GIF
+gif_frames = load_gif("assets/bg.gif")  # Remplacez par le chemin de votre GIF
 frame_count = len(gif_frames)
 current_frame = 0
 frame_rate = 100  # Temps entre les frames en millisecondes
