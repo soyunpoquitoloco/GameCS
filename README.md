@@ -17,3 +17,6 @@ The game has a main menu, a selection menu, two levels, uses a pcb and its butto
 
 
 Here is a quick video on how it runs : 
+
+https://github.com/user-attachments/assets/03b773d7-5716-4884-a300-275fa18963d4
+
